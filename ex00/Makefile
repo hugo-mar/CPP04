@@ -6,11 +6,11 @@
 #    By: hugo-mar <hugo-mar@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/21 16:58:06 by hugo-mar          #+#    #+#              #
-#    Updated: 2025/07/21 16:59:41 by hugo-mar         ###   ########.fr        #
+#    Updated: 2025/07/21 20:31:05 by hugo-mar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Polymorphism
+NAME = polymorphism
 
 CXX = c++
 
@@ -19,7 +19,8 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 SRCS_PATH = ./srcs/
 
 SRCS = $(SRCS_PATH)Animal.cpp $(SRCS_PATH)Dog.cpp \
-	   $(SRCS_PATH)Cat.cpp $(SRCS_PATH)main.cpp
+	   $(SRCS_PATH)Cat.cpp $(SRCS_PATH)WrongAnimal.cpp\
+	   $(SRCS_PATH)WrongCat.cpp $(SRCS_PATH)main.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
